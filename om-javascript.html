@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<title>Om JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="pageTitle">
+				<h1>Min Webbsida</h1>
+				<p>Inlämnings Uppgift 2<br>Nouar Al-Chaseb</p>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Start</a></li>
+				<li><a href="omjavascript.html" class="active">Om JavaScript</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<div class="content">
+				<button id="changeColor" class="button">Ändra text färg</button>
+				<h2>Om JavaScript</h2>
+				<h3>Vad är ett programmeringsspråk?</h3>
+				<p>För att få datorn att förstå vad vi vill att den skall göra tar vi hjälp av ett programmeringsspråk och skapar ett program. Ett datorprogram är helt enkelt en samling instruktioner som berättar för datorn hur den ska utföra en uppgift.</p>
+				<p>Det finns idag hundratals olika programmeringsspråk. De har kommit till av olika anledningar och har olika syften. Vissa är besläktade och har arv från varandra och andra har utvecklats för att fylla ett speciellt ändamål. Anledningen till att det finns så många språk och alltid kommer nya är naturligtvis att de är bra på olika saker och att olika personer uppskattar språken olika mycket. Vi kan börja med att dela upp språken i två grupper efter hur programmen kompileras och körs. Alla program skrivs i någon form av källkod. Denna källkod måste sedan översättas till något som en dator kan förstå. Datorn förstår bara 1 och 0, på eller av. Detta kallas kompilering och kan göras vid olika tillfällen.</p>
+				<p>Oftast delas programmeringsspråken i två grupper:</p>
+				<ul>
+					<li>Ett <strong>kompilerande</strong> språk är ett programmeringsspråk där källkoden med hjälp av olika verktyg översätts till maskinkod. Maskinkoden blir då ett fristående program som kan köras direkt av datorn. Exempel på kompilerande språk är: C, C++, Pascal och många fler.</li>
+					<li>Ett <strong>interpreterande</strong> programspråk, som också kallas skriptspråk, är ett programspråk som inte kompilerar det program som programmeraren har skrivit förrän det körs, och som gör det varje gång det körs. Ibland kompileras hela programmet innan det körs och ibland kompileras det rad för rad. Detta gör att utvecklingen går snabbare eftersom programmet inte behöver kompileras vid testkörning men det innebår också att det färdiga programmet blir långsammare eftersom det måste kompileras varje gång det körs. Exempel på interpreterande språk är: Perl, PHP, Python, TCL, Bash.</li>
+				</ul>
+				<p>För mer fakta <a href="http://www.rejas.se/fritis/programmeringab/chap_programmeringssprak.html" target="_blank">Klick här!</a></p>
+
+				<h3>Tillgänglighet och JavaScript, vad bör man tänka på?</h3>
+				<p>Javascript ger ofta en god användbarhet, och kan bidra till ökad tillgänglighet och effektivitet. Men det finns användare som inte kan eller vill använda Javascript. Se därför till att det går att använda webbplatsens viktigaste funktioner även utan Javascript, och följ riktlinjer för tillgänglig Javascript.</p>
+				<p>Beroende på hur Javascript används kan tillgängligheten på en webbplats påverkas. Många Javascriptbibliotek innehåller funktioner som gör det enkelt att skapa nya typer av gränssnittselement som skjutreglage eller ytor som uppdateras dynamiskt. Då dessa inte är en del av html-specifikationen, utan är uppbyggda av andra typer av element, finns det inget standardiserat sätt för hjälpmedel att tolka dem.</p>
+				<p>Detta kan ställa till problem för vissa användare. En person med synskada kanske missar att information uppdaterats dynamiskt, och en person med rörelsehinder kanske inte kan använda skjutreglaget om det inte går att styra med tangentbordet.</p>
+				<p>För mer fakta <a href="https://webbriktlinjer.se/riktlinjer/93-gor-inte-webbplatsen-beroende-av-javascript/" target="_blank">Klick här!</a></p>
+
+				<h3>Vad är DOM, Document Object Model, och hur hänger det ihop med JavaScript?</h3>
+				<p>DOM skapar möjligheter att påverka innehåll, struktur och layout i ett dokument. DOM delar in dokumentet i en trädstruktur där element i samma gren kan påverkas. Varje element kan ha ett överordnat element, "förälder" (Parent) och flera underordnade element, "barn" (Child).</p>
+				<p>Trädstrukturen kallas även för "node tree" och varje node har en hierarkisk relation till varandra i trädstrukturen. Varje node har en "parent node", förutom "root node" som inte kan ha någon parent. Varje node kan ha flera "child nodes" och dessutom flera "syskon" (Siblings) på samma gren.</p>
+				<p>DOM kan påverkas med Javascript och andra programspråk. I den här guiden används i första hand Javascript för att påverka objekt i DOM.</p>
+				<p>För mer fakta <a href="https://www.w3schools.com/js/js_htmldom_html.asp" target="_blank">Klick här!</a></p>
+
+			</div>
+
+			<div class="rightBlock">
+				<h2>Faktaruta</h2>
+				<p>JavaScript uppfanns av Brendan Eich 1995 och blev en ECMA-standard 1997.</p>
+				<p>JavaScript senaste versionen är 9(ECMAScript 2018).</p>
+				<p>JavaScript filändelse är .js</p>
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<p>Senast Uppdaterat 2018</p>
+		</footer>
+	</div>
+</body>
+</html>

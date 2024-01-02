@@ -1,0 +1,183 @@
+.container{
+	/*background-color: whitesmoke;*/
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header { 
+	background-color: whitesmoke;
+	padding: 0 15px;
+
+}
+
+.pageTitle h1 {
+	display: inline-block;
+}
+
+.pageTitle p {
+	float: right;
+
+}
+
+nav {
+	border-top: 2px solid black; 
+  	border-bottom: 2px solid black;
+	margin-bottom: 15px;
+	padding: 0 15px;
+}
+
+nav ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+  	padding: 0;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: white;
+	background-color: black;
+}
+
+.active {
+	color: white;
+	background-color: black;
+}
+
+main {
+	padding: 0 15px;
+}
+
+.button {
+	background-color: gray;
+  border: none;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+}
+
+.content {
+	float: left;
+	width: 60%;
+	padding-bottom: 15px;
+
+}
+
+.contentKontakt {
+	float: left;
+	width: 100%;
+}
+
+.bigImage {
+  cursor: pointer;
+}
+
+.bigImage:hover {
+  border: 1px solid black;
+}
+
+.rightBlock {
+	float: right;
+	width: 23%;
+	padding: 0 10px;
+	margin: 20px 0 15px 0;
+	border: solid black 2px;
+	border-radius: 12px;
+}
+
+.rightBlock input {
+	width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.rightBlock input[type="submit"] {
+	background-color: gray;
+    color: white;
+}
+
+.rightBlock input[type="submit"]:hover {
+	background-color: black;
+    color: white;
+}
+
+.footer {
+	clear: both;
+	width: 100%;
+	background-color: whitesmoke;
+	text-align: center;
+  	border-top: 2px solid black; 
+  	border-bottom: 2px solid black;
+	position: fixed;
+	left: 0;
+   	bottom: 0;
+	
+}
+
+
+@media (max-width: 575.98px) {
+	.header {
+		text-align: center;
+		padding: 15px 0;
+
+	}
+
+	.pageTitle h1 {
+		display: block;
+		margin: 0;
+	}
+
+	.pageTitle p {
+		float: none;
+		margin: 0; 
+	}
+
+	nav {
+		padding: 0;
+		border-bottom: none;
+	}
+
+	nav ul {
+		display: block;
+		width: 100%;
+
+	}
+
+	nav ul li {
+		float: none;
+  		border-bottom: 2px solid black;
+	}
+
+	.content {
+		float: none;
+		width: 100%;
+	}
+
+	.rightBlock {
+		float: none;
+		width: 90%;
+	}
+}
